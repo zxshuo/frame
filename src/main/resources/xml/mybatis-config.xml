@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <setting name="autoMappingBehavior" value="FULL"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="LOG4J2"/>
+    </settings>
+    <!-- <plugins>
+        <plugin interceptor="com.easyauc.common.support.mybatis.MyBatisUpdateInterceptor">
+        	要做verion检查的表明
+            <property name="tables" value="auc_item,auc_item_all,auc_bid,auc_bid_buyer" />
+            如果没有更新version字段，是否报异常
+            <property name="exceptionWhenNoVersionField" value="1" />
+            如果没有version字段为null，是否报异常
+            <property name="exceptionWhenVersionIsNull" value="1" />
+            如果没有update的条数为0，是否报异常
+            <property name="exceptionWhenResultZero" value="1" />
+        </plugin>
+    </plugins> --> 
+</configuration> 
